@@ -3,7 +3,7 @@ import './input.css';
 
 export const Input = (props) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState(props.options[0]);
+  const [selectedOption, setSelectedOption] = useState(props.options ? props.options[0] : null);
 
   const toggleOpen = () => {
     setIsOpen(!isOpen);
