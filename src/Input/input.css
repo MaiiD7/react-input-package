@@ -1,0 +1,93 @@
+
+input {
+  width: 90%;
+  height: 40px;
+  border-radius: 8px;
+  padding: 0px 10px;
+  border: 1px solid rgba(214, 228, 255, 1);
+  background: rgba(249, 251, 255, 1);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 5px 0px;
+  color: rgba(2, 32, 99, 1);
+}
+
+input::placeholder {
+  color: rgba(187, 187, 187, 0.7);
+}
+
+input:hover, input:focus, input:focus-visible, .custom-select:hover, .custom-select:focus, .custom-select:focus-visible, .hover {
+  outline: none;
+  border: 1px solid rgba(60, 120, 238, 1);
+}
+
+.hover {
+  border: 1px solid rgba(60, 120, 238, 1);
+}
+
+option {
+  padding: 10px;
+  margin: 30px;
+}
+
+label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 1px;
+  color: rgba(2, 32, 99, 1);
+}
+
+.custom-select {
+  position: relative;
+  width: 90%;
+  height: 40px;
+  border-radius: 8px;
+  padding: 0px 5px;
+  border: 1px solid rgba(214, 228, 255, 1);
+  background: rgba(249, 251, 255, 1);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 5px 0px;
+  color: rgba(2, 32, 99, 1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+ }
+ 
+ .selected-option {
+  padding: 0px 10px;
+  cursor: pointer;
+ }
+ 
+ .options {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: -0.5px;
+  border-radius: 0px 0px 8px 8px;
+  border: 1px solid rgba(214, 228, 255, 1);
+  background: rgba(249, 251, 255, 1);
+  z-index: 1;
+ }
+ 
+ .option {
+  padding: 10px;
+  cursor: pointer;
+  border-top: 1px solid rgba(187, 187, 187, 1);
+ }
+ 
+ .option:hover {
+  background-color: rgba(60, 120, 238, 0.1);
+ }
