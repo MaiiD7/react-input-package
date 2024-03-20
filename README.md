@@ -164,7 +164,7 @@ Maro Dronsart
 
 
 
-* 1.0.0
+* 1.0.1
 
     * Initial Release
 
