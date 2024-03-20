@@ -1,11 +1,18 @@
+/*****************************************/
+/* Style applied to diffeents components */
+/*****************************************/
 
-input {
-  width: 90%;
+/***************/
+/* Basic Style */
+/***************/
+
+.custom-input, .custom-select {
+  width: 100%;
   height: 35px;
   border-radius: 8px;
   padding: 0px 10px;
   border: 1px solid rgba(214, 228, 255, 1);
-  background: rgba(249, 251, 255, 1);
+  background: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -14,40 +21,42 @@ input {
   text-align: left;
   margin: 5px 0px;
   color: rgba(2, 32, 99, 1);
+  box-sizing: border-box;
 }
 
-input::placeholder {
+/***************/
+/* Input Style */
+/***************/
+
+/* Placeholder */
+.custom-input::placeholder {
   color: rgba(187, 187, 187, 0.7);
 }
 
-input:hover, input:focus, input:focus-visible, .custom-select:hover, .custom-select:focus, .custom-select:focus-visible, .hover {
+/* Hover & Focus style */
+.custom-input:hover, .custom-select:hover {
   outline: none;
   border: 1px solid rgba(60, 120, 238, 1);
+}
+
+.custom-input:focus, .custom-input:focus-visible {
+  border: none;
+  outline: 2px solid rgba(60, 120, 238, 1);
+  outline-offset: -1px;
 }
 
 .hover {
   border: 1px solid rgba(60, 120, 238, 1);
 }
 
-option {
-  padding: 10px;
-  margin: 30px;
-}
-
-label {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: left;
-  margin-left: 1px;
-  color: rgba(2, 32, 99, 1);
-}
+/****************/
+/* Select Style */
+/****************/
 
 .custom-select {
+  box-sizing: border-box;
   position: relative;
-  width: 85%;
+  width: 100%;
   height: 35px;
   border-radius: 8px;
   padding: 0px 20px 0px 5px;
@@ -64,6 +73,12 @@ label {
   display: flex;
   align-items: center;
  }
+
+ /* Options Style */
+  option {
+    padding: 10px;
+    margin: 30px;
+  }
  
  .selected-option {
   padding: 0px 10px;
@@ -82,17 +97,6 @@ label {
   background: rgba(249, 251, 255, 1);
   z-index: 1;
  }
-
-.custom-select .options::-webkit-scrollbar {
-  width: 5px;
-  opacity: 0;
-}
-
-.custom-select .options::-webkit-scrollbar-thumb {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  background-color: rgba(60, 120, 238, 0.8);
-  border-radius: 8px;
-}
  
  .option {
   padding: 10px;
@@ -103,3 +107,63 @@ label {
  .option:hover {
   background-color: rgba(60, 120, 238, 0.1);
  }
+
+  /* Scrollbar */
+  .custom-select .options::-webkit-scrollbar {
+    width: 5px;
+    opacity: 0;
+  }
+
+  .custom-select .options::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: rgba(60, 120, 238, 0.8);
+    border-radius: 8px;
+  }
+
+/***************/
+/* Label Style */
+/***************/
+
+label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 1px;
+  color: rgba(2, 32, 99, 1);
+}
+
+/***************/
+/* Error Style */
+/***************/
+
+ .error {
+  border: 1px solid red;
+ }
+
+ .error:hover, .error:hover {
+  outline: none;
+  border: 1px solid red;
+}
+
+ .error:focus, .error:focus-visible {
+  border: none;
+  outline: 2px solid red;
+  outline-offset: -1px;
+}
+
+/***********************/
+/* End Adornment Style */
+/***********************/
+
+.icon {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(187, 187, 187, 0.7);
+  position: absolute;
+  right: 10px;
+  top: 25%;
+  max-height: 100%;
+}
