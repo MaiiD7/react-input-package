@@ -1,3 +1,4 @@
+import React from 'react'
 import { forwardRef, useEffect, useRef, useState } from 'react';
 import VectorArrow from '../../assets/Vector.svg';
 import './input.css';
