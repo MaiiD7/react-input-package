@@ -1,5 +1,5 @@
 {
-  "name": "react-custom-input",
+  "name": "@maiid7/react-custom-input",
   "version": "1.0.0",
   "description": "A simple customisable input for React",
   "main": "index.js",
